@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-weight: 300;
+}
+
+.row {
+    margin: 0;
+}
+
+.bg-red {
+    background: #a20c0d !important;
+}
+
+/* Home */
+.home {
+    background-image: url(../images/Bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.about .bg-img {
+    background-image: url(../images/Bgg.png);
+    background-position: right;
+    background-size: cover;
+}
+
+.about h2 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
+h3.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.title::after {
+    content: '';
+    width: 80px;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: 1.5rem;
+}
+
+h3.text-white::after,
+.valor .bg-img h3::after {
+    background: #fff;
+}
+
+h2.subtitle {
+    color: #b49a75;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.que-hacemos .bg-red p,
+.valor .bg-img p {
+    color: #fff;
+}
+
+/* Valor */
+.valor .bg-img {
+    background-image: url(../images/Bgg.png);
+    background-size: cover;
+    background-position: 0 0;
+}
+
+/* Servicios */
+
+.services .header {
+    background-image: url(../images/Bgg.png);
+    background-position: center;
+}
+
+.services .service img {
+    width: 100px;
+}
