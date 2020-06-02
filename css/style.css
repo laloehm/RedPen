@@ -16,6 +16,14 @@ p {
     background: #a20c0d !important;
 }
 
+/* Section Header */
+.services .header,
+.book .header,
+.contact .header {
+    background-image: url(../images/Bgg.png);
+    background-position: center;
+}
+
 /* Home */
 .home {
     background-image: url(../images/Bg.png);
@@ -82,12 +90,6 @@ h2.subtitle {
 }
 
 /* Servicios */
-
-.services .header {
-    background-image: url(../images/Bgg.png);
-    background-position: center;
-}
-
 .services .service img {
     width: 100px;
 }
