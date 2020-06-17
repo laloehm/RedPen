@@ -18,8 +18,8 @@ p {
 
 /* Section Header */
 .services .header,
-.book .header,
-.contact .header {
+.bancomer .header,
+.content .header {
     background-image: url(../images/Bgg.png);
     background-position: center;
 }
@@ -92,4 +92,112 @@ h2.subtitle {
 /* Servicios */
 .services .service img {
     width: 100px;
+}
+
+.services .owl-carousel img {
+    width: 150px !important;
+    height: 150px;
+}
+
+/* .owl-nav {
+    display: flex;
+    justify-content: center;
+} */
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    /* background: red !important; */
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    background: rgba(0, 0, 0, .7);
+    width: 30px;
+    height: 30px !important;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.services button:focus {
+    outline: 0;
+}
+
+/* Book */
+.book {
+    background-image: url(../images/Bgg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Contact */
+.contact {
+    background-image: url(../images/Bgg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact label {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact input,
+.contact textarea {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0 !important;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background: transparent;
+    color: #fff;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    box-shadow: none;
+}
+
+.contact .info {
+    height: 100%;
+    background: rgba(55, 15, 19, .5);
+    width: 100%;
+    color: #fff;
+}
+
+.contact .btn-primary {
+    background: #b49a75 !important;
+    border: none;
+    padding: .5rem 1rem;
+    width: 100%;
+    font-weight: 300;
+}
+
+.contact .phone a,
+.contact .mail a {
+    color: #b49a75;
 }
