@@ -10,6 +10,7 @@ p {
 
 .row {
     margin: 0;
+    width: 100%;
 }
 
 .bg-red {
@@ -143,12 +144,26 @@ h2.subtitle {
 }
 
 /* Book */
-.book {
+.book,
+.content {
     background-image: url(../images/Bgg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+}
+
+.content {
+    height: 760px;
+}
+
+.content .carousel {
+    width: 300px;
+    margin-left: 10px;
+}
+
+.content .bg {
+    position: absolute;
+    width: 342px;
 }
 
 /* Contact */
