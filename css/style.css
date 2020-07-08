@@ -156,6 +156,14 @@ h2.subtitle {
     background-position: center;
 }
 
+.book a.title {
+    color: #a20c0d;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .content {
     height: 760px;
 }
@@ -182,6 +190,10 @@ h2.subtitle {
 
 .modal-content {
     background: #a20c0d;
+}
+
+#modalVideos .modal-content {
+    background: transparent;
 }
 
 .carousel-control-next,

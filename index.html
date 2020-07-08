@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <!-- <link rel="stylesheet" href="css/owl.theme.default.css"> -->
 
     <title>RedPen</title>
@@ -69,7 +70,7 @@
     </section>
 
     <!-- Valor diferencial -->
-    <!-- <section class="valor">
+    <section class="valor">
         <div class="row">
             <div class="col-md-6 bg-img d-flex justify-content-center flex-column align-items-center p-5">
                 <h2 class="subtitle">REDPEN BOUTIQUE</h2>
@@ -82,7 +83,7 @@
                 <img src="images/Pen.png" class="img-fluid" alt="">
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Servicios -->
     <section class="services mb-5">
@@ -150,19 +151,67 @@
         <div class="text-center header d-flex flex-column align-items-center py-4">
             <h2 class="subtitle mt-2">REDPEN BOUTIQUE</h2>
             <h3 class="title mb-0 text-white">NUESTRO BOOK</h3>
+            <div class="d-flex justify-content-around align-items-end flex-wrap w-100 my-4">
+                <img src="images/Logos/logoamexgris.png" width="80" alt="">
+                <img src="images/Logos/logoaeromexico.png" width="120" alt="">
+                <img src="images/Logos/camellogo.png" width="150" alt="">
+                <img src="images/Logos/Logo-BBVA.png" width="120" alt="">
+                <img src="images/Logos/logopresidente.png" width="200" alt="">
+            </div>
         </div>
+        <div class="row my-4">
+            <div class="col-md-6">
+                <div class="item mx-auto">
+                    <div class="gallery-item" data-index="1">
+                        <img src="images/Book/Camel/Caverna.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="item mx-auto">
+                    <div class="gallery-item" data-index="2">
+                        <img src="images/Book/Scribe/Scribe-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-3">
+                <div class="item mx-auto">
+                    <div class="gallery-item" data-index="3">
+                        <img src="images/Book/BBVA/Bacomer-1.png" class="img-fluid" alt="">>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center p-0">
+                <div class="item mx-auto">
+                    <div class="gallery-item" data-index="4">
+                        <img src="images/Book/Sol/Playa-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="item mx-auto">
+                    <div class="gallery-item" data-index="5">
+                        <img src="images/Book/Aero.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row my-5">
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
+            <!-- <div class="col-md-3 d-flex justify-content-center align-items-center">
                 <a href="#" data-toggle="modal" data-target="#modalGrafica">GRÁFICA</a>
             </div>
             <div class="col-md-3 d-flex justify-content-center align-items-center">
                 <a href="#" data-toggle="modal" data-target="#modalDigital">DIGITAL</a>
+            </div> -->
+            <div class="col-md-6" data-toggle="modal" data-target="#modalVideos">
+                <a href="#" class="title">TV</a>
+                <img src="Videos/Mercedes.png" class="img-fluid" alt="">
             </div>
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <a href="#" data-toggle="modal" data-target="#modalVideos">TV</a>
-            </div>
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <a href="#">RADIO</a>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <a href="#" class="title">RADIO</a>
             </div>
         </div>
         <!-- <div class="text-center d-flex flex-column align-items-center py-4">
@@ -374,18 +423,20 @@
                     <div class="info h-100 d-flex flex-column align-items-center justify-content-center">
                         <div class="mail w-75">
                             <p class="m-0">E-Mail</p>
-                            <a href="mailto:contact@redpen.com">contact@redpen.com</a>
+                            <a href="mailto:contact@redpen.com">contacto@redpenboutique.com.mx</a>
                         </div>
                         <div class="phone w-75 my-4">
                             <p class="m-0">Phone</p>
-                            <a href="mailto:5555-55-55-55">55 55-55-55-55</a>
+                            <a href="mailto:5555-55-55-55" class="d-block">55 10 13 54 34</a>
+                            <a href="mailto:5555-55-55-55" class="d-block">55 55 58 92 46</a>
+                            <a href="mailto:5555-55-55-55" class="d-block">55 41 38 21 40</a>
                         </div>
-                        <div class="redes w-75">
+                        <!-- <div class="redes w-75">
                             <p>Siguenos</p>
                             <i class="fab fa-facebook-f"></i>
                             <i class="fab fa-instagram mx-4"></i>
                             <i class="fab fa-linkedin-in"></i>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -404,7 +455,7 @@
     <div class="modal fade" id="modalVideos" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-body py-4 px-5">
+                <div class="modal-body p-0">
                     <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button> -->
@@ -503,6 +554,7 @@
     <!-- <script src="js/owl.carousel.js"></script> -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/lightbox.js"></script>
 
 </body>
 
