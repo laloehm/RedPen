@@ -26,7 +26,7 @@
 <body>
 
     <section class="home">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">¿DE DÓNDE VENIMOS?</a>
+                        <a class="nav-link" href="#de-donde-venimos">¿DE DÓNDE VENIMOS?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICIOS</a>
+                        <a class="nav-link" href="#servicios">SERVICIOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">NUESTRO BOOK</a>
+                        <a class="nav-link" href="#nuestro-book">NUESTRO BOOK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTÁCTANOS</a>
+                        <a class="nav-link" href="#contacto">CONTÁCTANOS</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
     </section>
 
     <!-- Quiénes somos -->
-    <section class="about">
+    <section class="about" id="de-donde-venimos">
         <div class="row">
             <div class="col-md-6 px-5 d-flex flex-column align-items-center justify-content-center my-5 py-5">
                 <h2>REDPEN BOUTIQUE</h2>
@@ -86,7 +86,7 @@
     </section>
 
     <!-- Servicios -->
-    <section class="services mb-5">
+    <section class="services mb-5" id="servicios">
         <div class="text-center header d-flex flex-column align-items-center py-4">
             <h2 class="subtitle mt-2">REDPEN BOUTIQUE</h2>
             <h3 class="title mb-0 text-white">SERVICIOS</h3>
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="book">
+    <section class="book" id="nuestro-book">
         <div class="text-center header d-flex flex-column align-items-center py-4">
             <h2 class="subtitle mt-2">REDPEN BOUTIQUE</h2>
             <h3 class="title mb-0 text-white">NUESTRO BOOK</h3>
@@ -210,8 +210,34 @@
                 <a href="#" class="title">TV</a>
                 <img src="Videos/Mercedes.png" class="img-fluid" alt="">
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <a href="#" class="title">RADIO</a>
+            <div class="col-md-6 ">
+                <!-- <a href="#" class="title">RADIO</a> -->
+                <div id="player">
+                    <img src="" class="cover" id="art" />
+                    <div class="trackinfo">
+                        <p id="title"></p>
+                        <p id="artist"></p>
+                    </div>
+                    <div id="track">
+                        <div id="progress"></div>
+                        <div id="handler"></div>
+                    </div>
+                    <div class="container">
+                        <div class="info">
+                            <div class="cont d-flex justify-content-center">
+                                <button id="prev" class="nav d-flex justify-content-center align-items-center">
+                                    <img src="http://abarcarodriguez.com/lab/prev.png" />
+                                </button>
+                                <button id="play" class="nav d-flex justify-content-center align-items-center">
+                                    <img class="pad" src="http://abarcarodriguez.com/lab/play.png" />
+                                </button>
+                                <button id="next" class="nav d-flex justify-content-center align-items-center">
+                                    <img src="http://abarcarodriguez.com/lab/next.png" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- <div class="text-center d-flex flex-column align-items-center py-4">
@@ -391,7 +417,7 @@
     </section> -->
 
     <!-- Contacto -->
-    <section class="contact py-5">
+    <section class="contact py-5" id="contacto">
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-6">
