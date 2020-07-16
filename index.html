@@ -497,18 +497,18 @@
                         <h2 class="subtitle mt-2">REDPEN BOUTIQUE</h2>
                         <h3 class="title mb-0 mt-3 text-white">CONTÁCTANOS</h3>
                     </div>
-                    <form class="">
+                    <form class="form-contact" method="POST" action="contact-form.php">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" class="form-control" name="name" id="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" name="email" id="email" required>
                         </div>
                         <div class="form-group">
                             <label for="mesage">Mensaje</label>
-                            <textarea class="form-control" id="mesage" rows="3" required></textarea>
+                            <textarea class="form-control" id="mesage" name="message" rows="3" required></textarea>
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
@@ -516,6 +516,9 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
+                    <div class="alert p-0 mt-3" id="alert-contacto">
+                        <p class="text-white font-weight-bold text-center">Gracias en un momento nos comunicaremos con usted</p>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="info h-100 d-flex flex-column align-items-center justify-content-center">
@@ -529,25 +532,11 @@
                             <a href="tel:5527589245" class="d-block">55 2758 9245</a>
                             <a href="tel:5541382140" class="d-block">55 4138 2140</a>
                         </div>
-                        <!-- <div class="redes w-75">
-                            <p>Siguenos</p>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-instagram mx-4"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- <section class="portafolio my-5">
-        <div class="text-center">
-            <h2>REDPEN BOUTIQUE</h2>
-            <h3>PORTAFOLIO</h3>
-        </div>
-    </section> -->
 
     <!-- Modal Videos -->
     <div class="modal fade" id="modalVideos" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
